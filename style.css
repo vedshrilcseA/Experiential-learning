@@ -1,0 +1,47 @@
+body{
+font-family: Arial, sans-serif;
+}
+
+
+td{
+border-radius: 15px;
+padding: 20px;
+box-shadow: 2px 2px 8px gray;
+transition: 0.3s;
+}
+
+td:hover{
+transform: scale(1.05);
+background-color: white;
+}
+
+table{
+border-collapse: separate;
+border-spacing: 15px;
+}
+button{
+padding: 10px 20px;
+border-radius: 20px;
+border: none;
+background-color: black;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover{
+background-color: purple;
+color: white;
+}
+
+h1{
+color: purple;
+}
+
+h2{
+color: darkblue;
+}
+
+footer{
+margin-top: 20px;
+}
