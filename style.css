@@ -53,6 +53,29 @@ footer {
   margin-top: 20px;
 }
 
+/* Language Cards */
+.lang-card1,.lang-card2,.lang-card3,.lang-card4 {
+  display: inline-block;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.lang-card1 {
+  background: lightpink;
+}
+.lang-card2 {
+  background: lightblue;
+}
+.lang-card3 {
+  background: lightgreen;
+}
+.lang-card4 {
+  background: orange;
+}
+
 
 /* Flip Card */
 .flip-card,.flip-card1,.flip-card2,.flip-card3,.flip-card4{
