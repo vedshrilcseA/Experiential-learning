@@ -1,64 +1,119 @@
 <html>
-<head>    
-<h1> Fun Language Learning App </h1>
-<link rel="stylesheet" href="style.css"
+<hr>
+<head>
+    <title>Korean Learning</title>
+    <h1> Fun Language Learning App </h1>
+    <link rel="stylesheet" href="style.css">
 </head>
 <hr>
 
-<h2>Choose Your Language </h2>
+<body>
+<center>
+    <h2>Choose Your Language </h2>
 
-<table border="1" cellpadding="20">
-<tr>
+    <table border="1" cellpadding="20">
+        <tr>
 
-<td bgcolor="lightpink">
-<h3> Korean</h3>
-<a href="Lag1.html">
-<button>Start</button>
-</a>
-</td>
+            <td bgcolor="lightpink">
+                <h3> Korean</h3>
+                <a href="Lag1.html"><button>Start</button></a>
+            </td>
 
-<td bgcolor="lightblue">
-<h3> French</h3>
-<a href="Lag2.html">
-<button>Start</button>
-</a>
-</td>
+            <td bgcolor="lightblue">
+                <h3> French</h3>
+                <a href="Lag2.html"><button>Start</button></a>
+            </td>
 
-<td bgcolor="lightgreen">
-<h3> Spanish</h3>
-<a href="Lag3.html">
-<button>Start</button>
-</a>
-</td>
+            <td bgcolor="lightgreen">
+                <h3> Spanish</h3>
+                <a href="Lag3.html"><button>Start</button></a>
+            </td>
 
-<td bgcolor="orange">
-<h3> Japanese</h3>
-<a href="Lag4.html">
-<button>Start</button>
-</a>
-</td>
+            <td bgcolor="orange">
+                <h3> Japanese</h3>
+                <a href="Lag4.html"><button>Start</button>>
+            </td>
 
-</tr>
-</table>
+        </tr>
+    </table>
 
-<br>
+    <br>
 
-<hr>
+    <hr>
 
-<h2 id="korean"> Korean</h2>
+    <h2 id="korean"> Korean</h2>
 
-<table border="1" cellpadding="15">
-<tr>
-<td bgcolor="lightblue">Hello<br>안녕하세요<br>annoynghaseyo</td>
-<td bgcolor="lightpink">Thank You<br>감사합니다<br>gamsahabnida</td>
-<td bgcolor="lightgreen">Yes<br>네<br>neh</td>
-<td bgcolor="orange">No<br>아니요<br>aniyo</td>
-</tr>
-</table>
+    <table border="1" cellpadding="15">
+        <tr>
+            <td class="flip-card1">
 
-<br>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">Hello</div>
+                    <div class="flip-card-back">안녕하세요 (Annyeonghaseyo)</div>
+                </div>
 
-<hr>
+            </td>
+            <td class="flip-card2">
 
-<a href="index.html"><button>Back</button></a>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">Thank You</div>
+                    <div class="flip-card-back">감사합니다 (Gamsahamnida)</div>
+                </div>
+
+            </td>
+            <td class="flip-card3">
+
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">Yes</div>
+                    <div class="flip-card-back">네 (neh)</div>
+                </div>
+
+            </td>
+            <td class="flip-card4">
+
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">No</div>
+                    <div class="flip-card-back">아니요 (aniyo)</div>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <hr>
+
+    <div class="translation-section">
+
+        <br>
+
+        <a href="index.html"><button class="back-btn">Back</button></a>
+        <br><br>
+    </div>
+
+    <div>
+        <input type="text" id="inputText" placeholder="Enter word to translate...">
+        <button onclick="translateText()">Translate</button>
+
+    </div>
+
+    <div class="container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <P id="frontText"></P>
+                </div>
+                <div class="flip-card-back">
+                    <p id="output"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</center>
+</body>
+
 </html>
