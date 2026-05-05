@@ -54,10 +54,7 @@ footer {
 }
 
 /* Language Cards */
-.lang-card1,
-.lang-card2,
-.lang-card3,
-.lang-card4 {
+.lang-card1,.lang-card2,.lang-card3,.lang-card4 {
   display: inline-block;
   padding: 20px;
   height: 100px;
@@ -79,12 +76,9 @@ footer {
   background: orange;
 }
 
+
 /* Flip Card */
-.flip-card,
-.flip-card1,
-.flip-card2,
-.flip-card3,
-.flip-card4 {
+.flip-card,.flip-card1,.flip-card2,.flip-card3,.flip-card4{
   background-color: transparent;
   width: 200px;
   height: 120px;
@@ -113,6 +107,7 @@ footer {
 .flip-card {
   width: 300px;
 }
+
 
 .flip-card-inner {
   position: relative;
