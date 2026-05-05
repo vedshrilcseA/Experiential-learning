@@ -1,5 +1,5 @@
 function getCurrentLanguage() {
-    const title = document.querySelector('h1')?.innerText || '';
+    const title = document.title || '';
 
     if (title.includes('Korean')) return 'ko';
     if (title.includes('French')) return 'fr';
@@ -10,7 +10,7 @@ function getCurrentLanguage() {
 }
 
 function getSpeechLanguage() {
-    const title = document.querySelector('h1')?.innerText || '';
+    const title = document.title || '';
 
     if (title.includes('Korean')) return 'ko-KR';
     if (title.includes('French')) return 'fr-FR';
@@ -49,12 +49,16 @@ function translateText() {
         .then(data => {
             translatedWord = data.responseData.translatedText;
 
-            output.innerHTML = `
-                <strong>Translation:</strong><br>
-                ${translatedWord}
-                <br><br>
-                <button onclick="speakTranslation()">🔊 Speak</button>
-            `;
+            output.textContent = "";
+
+            const label = document.createElement("strong");
+            label.textContent = "Translation:";
+
+            const speakButton = document.createElement("button");
+            speakButton.textContent = "Speak";
+            speakButton.addEventListener("click", speakTranslation);
+
+            output.append(label, document.createElement("br"), translatedWord, document.createElement("br"), document.createElement("br"), speakButton);
         })
         .catch(error => {
             output.innerText = "Translation error! Please try again.";
