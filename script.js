@@ -1,5 +1,7 @@
 function getCurrentLanguage() {
-    const title = document.querySelector('h1')?.innerText || '';
+    /*const title = document.querySelector('h1')?.innerText || '';*/
+    const title = document.title || '';
+
 
     if (title.includes('Korean')) return 'ko';
     if (title.includes('French')) return 'fr';
@@ -10,7 +12,9 @@ function getCurrentLanguage() {
 }
 
 function getSpeechLanguage() {
-    const title = document.querySelector('h1')?.innerText || '';
+    /*const title = document.querySelector('h1')?.innerText || '';*/
+    const title = document.title || '';
+
 
     if (title.includes('Korean')) return 'ko-KR';
     if (title.includes('French')) return 'fr-FR';
