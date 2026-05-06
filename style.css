@@ -1,6 +1,15 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
+
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(10, 25, 47, 0.45), rgba(10, 25, 47, 0.45)),
+              url("language-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -8,6 +17,20 @@ h1 {
   background: rgb(135, 204, 227);
   padding: 15px;
   margin: 0;
+  color: purple;
+}
+
+header h1 {
+  color: white;
+  background: transparent;
+  font-size: 42px;
+  padding-top: 35px;
+  text-shadow: 2px 2px 8px black;
+}
+
+h2 {
+  color: darkblue;
+  /*text-shadow: 1px 1px 5px black;*/
 }
 
 td {
@@ -25,7 +48,13 @@ td:hover {
 table {
   border-collapse: separate;
   border-spacing: 15px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  padding: 15px;
+  border: none;
+  backdrop-filter: blur(6px);
 }
+
 button {
   padding: 10px 20px;
   border-radius: 20px;
@@ -41,20 +70,28 @@ button:hover {
   color: white;
 }
 
-h1 {
-  color: purple;
-}
-
-h2 {
-  color: darkblue;
-}
-
 footer {
   margin-top: 20px;
 }
 
+footer h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.tagline {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 5px black;
+}
+
+
 /* Language Cards */
-.lang-card1,.lang-card2,.lang-card3,.lang-card4 {
+.lang-card1,
+.lang-card2,
+.lang-card3,
+.lang-card4 {
   display: inline-block;
   padding: 20px;
   height: 100px;
@@ -62,7 +99,11 @@ footer {
   margin: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: 0.3s;
 }
+
+
 .lang-card1 {
   background: lightpink;
 }
@@ -76,9 +117,12 @@ footer {
   background: orange;
 }
 
-
 /* Flip Card */
-.flip-card,.flip-card1,.flip-card2,.flip-card3,.flip-card4{
+.flip-card,
+.flip-card1,
+.flip-card2,
+.flip-card3,
+.flip-card4 {
   background-color: transparent;
   width: 200px;
   height: 120px;
@@ -86,6 +130,13 @@ footer {
   display: inline-block;
   margin: 15px;
   cursor: pointer;
+}
+
+.lang-card1:hover,
+.lang-card2:hover,
+.lang-card3:hover,
+.lang-card4:hover {
+  transform: translateY(-8px) scale(1.05);
 }
 
 .flip-card1 {
@@ -107,7 +158,6 @@ footer {
 .flip-card {
   width: 300px;
 }
-
 
 .flip-card-inner {
   position: relative;
